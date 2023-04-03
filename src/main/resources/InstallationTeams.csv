@@ -1,0 +1,6 @@
+teamId,teamName,amountOfPeople,activeJobId
+1,Team Alpha,3,1
+2,Team Bravo,4,2
+3,Team Charlie,5,0
+4,Team Delta,3,3
+5,Team Echo,4,0

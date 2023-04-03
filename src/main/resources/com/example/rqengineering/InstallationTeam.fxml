@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.InstallationTeam">
+    <children>
+        <HBox layoutY="87.0" prefHeight="142.0" prefWidth="375.0">
+            <children>
+                <TableView fx:id="installationTeamTable" prefHeight="142.0" prefWidth="376.0">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="ID" />
+                        <TableColumn prefWidth="75.0" text="Name" />
+                  <TableColumn prefWidth="225.0" text="Description" />
+                    </columns>
+                </TableView>
+            </children></HBox>
+      <HBox layoutY="284.0" prefHeight="100.0" prefWidth="375.0">
+         <children>
+            <TableView prefHeight="100.0" prefWidth="378.0">
+              <columns>
+                <TableColumn prefWidth="374.0" text="Material Requirements For The Job" />
+              </columns>
+            </TableView>
+         </children></HBox>
+      <HBox layoutY="434.0" prefHeight="100.0" prefWidth="378.0">
+         <children>
+            <TableView prefHeight="100.0" prefWidth="378.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="114.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+        <Label alignment="CENTER" layoutX="123.0" layoutY="70.0" prefHeight="17.0" prefWidth="129.0" text="Current Assigned Job" />
+      <Label alignment="CENTER" layoutX="132.0" layoutY="417.0" prefHeight="17.0" prefWidth="129.0" text="Customer Information" />
+    </children>
+</AnchorPane>
