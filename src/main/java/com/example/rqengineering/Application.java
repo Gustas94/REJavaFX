@@ -13,6 +13,8 @@ public class Application extends javafx.application.Application {
     private static List<JobClass> jobs;
     private static List<InstallationTeam> teams;
 
+    private static List<InstallationEmployee> employees;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login.fxml"));
@@ -26,6 +28,7 @@ public class Application extends javafx.application.Application {
         customers = CustomerLoader.readCustomersFromFile("src/main/resources/customers.csv");
         jobs = JobLoader.readJobsFromFile("src/main/resources/jobs.csv");
         teams = InstallationTeamLoader.readTeamsFromFile("src/main/resources/InstallationTeams.csv", jobs);
+        employees = InstallationEmployeesLoader.readEmployeesFromFile("src/main/resources/InstallationEmployees.csv");
         launch(args);
     }
 
@@ -39,5 +42,9 @@ public class Application extends javafx.application.Application {
 
     public static List<InstallationTeam> getTeams() {
         return teams;
+    }
+
+    public static List<InstallationEmployee> getEmployees() {
+        return employees;
     }
 }

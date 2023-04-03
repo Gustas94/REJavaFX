@@ -1,0 +1,6 @@
+id,firstName,lastName,phoneNumber,teamId,teamName
+1,John,Doe,555-1234,1,Team Alpha
+2,Jane,Doe,555-5678,2,Team Bravo
+3,Jim,Smith,555-9012,1,Team Alpha
+4,Emily,Johnson,555-3456,3,Team Charlie
+5,Michael,Brown,555-7890,4,Team Delta
