@@ -4,3 +4,7 @@ CustomerId,FirstName,LastName,Email,PhoneNumber,Address,EmergencyPhone,ActiveJob
 3,Michael,Johnson,michael.johnson@example.com,555-345-6789,789 Pine St.,555-765-4321,Job3
 4,Emily,Williams,emily.williams@example.com,555-456-7890,1012 Elm St.,555-654-3210,Job4
 5,David,Brown,david.brown@example.com,555-567-8901,1314 Maple St.,555-543-2109,Job5
+6,Tomas,Varnas,tomas.varnas@example.com,370867867594,Matt 16,6541231981,8
+7,Domas,Makas,domas.makas@example.com,58231456,Trello 12,29456132,Job7
+8,CEO,Ruzgys,ceo.ruzys@gmail.com,50231564,Troops 16,23164132,Job999
+9,Java,fx,java.fx@example.com,529765513,Triss 27,98165423,Job9

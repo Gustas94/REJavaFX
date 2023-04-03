@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.CustomerForm">
+   <children>
+      <VBox fx:id="CustomerForm" alignment="CENTER" layoutX="97.0" layoutY="14.0" prefHeight="408.0" prefWidth="168.0" spacing="10">
+         <children>
+             <Label text="Fill in Customer Information" />
+             <TextField fx:id="firstNameField" promptText="First Name" />
+             <TextField fx:id="lastNameField" promptText="Last Name" />
+             <TextField fx:id="emailField" promptText="Email" />
+             <TextField fx:id="phoneNumberField" promptText="Phone Number" />
+             <TextField fx:id="addressField" promptText="Address" />
+             <TextField fx:id="emergencyPhoneField" promptText="Emergency Phone" />
+             <TextField fx:id="activeJobField" promptText="Active Job" />
+             <Button mnemonicParsing="false" onAction="#saveCustomerInformation" text="Save Customer Information" />
+             <Label fx:id="messageLabel" alignment="TOP_LEFT" prefHeight="89.0" prefWidth="147.0" wrapText="true" />
+         </children></VBox>
+   </children>
+</AnchorPane>
