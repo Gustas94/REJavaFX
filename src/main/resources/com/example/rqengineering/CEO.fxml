@@ -19,7 +19,7 @@
       </HBox>
       <HBox layoutX="-1.0" layoutY="177.0" prefHeight="100.0" prefWidth="376.0">
          <children>
-            <TableView fx:id="jobTable" prefHeight="100.0" prefWidth="379.0">
+            <TableView fx:id="jobTable" prefHeight="100.0" prefWidth="381.0">
               <columns>
                 <TableColumn fx:id="jobIdColumn" prefWidth="75.0" text="ID" />
                 <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
@@ -31,10 +31,16 @@
       </HBox>
       <HBox layoutY="312.0" prefHeight="100.0" prefWidth="376.0">
          <children>
-            <TableView prefHeight="100.0" prefWidth="376.0">
+            <TableView fx:id="customerTable" prefHeight="100.0" prefWidth="376.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <TableColumn fx:id="customerIdColumn" prefWidth="26.0" text="ID" />
+                <TableColumn fx:id="firstNameColumn" prefWidth="48.0" text="First Name" />
+                  <TableColumn fx:id="lastNameColumn" prefWidth="101.0" text="Last Name" />
+                  <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="0.0" text="Email" />
+                  <TableColumn fx:id="phoneNumberColumn" minWidth="0.0" prefWidth="46.0" text="Phone Number" />
+                  <TableColumn fx:id="addressColumn" prefWidth="49.0" text="Address" />
+                  <TableColumn fx:id="emergencyPhoneColumn" prefWidth="43.0" text="Emergency Phone" />
+                  <TableColumn fx:id="customerActiveJobColumn" prefWidth="105.0" text="Active Job" />
               </columns>
             </TableView>
          </children>
