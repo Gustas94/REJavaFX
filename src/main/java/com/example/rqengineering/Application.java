@@ -41,7 +41,7 @@ public class Application extends javafx.application.Application {
     }
 
     public static List<JobClass> getJobs() {
-        return new ArrayList<>(jobs);
+        return jobs;
     }
 
     public static List<InstallationTeam> getTeams() {
@@ -55,4 +55,6 @@ public class Application extends javafx.application.Application {
     public static void updateJobs(List<JobClass> updatedJobs) {
         jobs = updatedJobs;
     }
+
+
 }

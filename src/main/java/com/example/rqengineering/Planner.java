@@ -73,7 +73,7 @@ public class Planner implements Initializable {
             return activeJobName;
         });
 
-        fillInstallationTeamsTableView();
+        fillInstallationTeamsTable();
 
         jobComboBox.setItems(FXCollections.observableArrayList(Application.getJobs()));
         teamComboBox.setItems(FXCollections.observableArrayList(Application.getTeams()));
@@ -105,9 +105,10 @@ public class Planner implements Initializable {
 
             // Refresh the table views
             fillJobsTableView();
-            fillInstallationTeamsTableView();
-            // Refresh the ComboBox items
-            refreshComboBoxes();
+            fillInstallationTeamsTable();
+
+            jobsTableView.refresh();
+            installationTeamsTableView.refresh();
         }
     }
 
@@ -116,13 +117,8 @@ public class Planner implements Initializable {
         jobsTableView.setItems(jobList);
     }
 
-    private void fillInstallationTeamsTableView() {
+    private void fillInstallationTeamsTable() {
         ObservableList<InstallationTeam> installationTeamList = FXCollections.observableArrayList(Application.getTeams());
         installationTeamsTableView.setItems(installationTeamList);
-    }
-
-    private void refreshComboBoxes() {
-        jobComboBox.setItems(FXCollections.observableArrayList(Application.getJobs()));
-        teamComboBox.setItems(FXCollections.observableArrayList(Application.getTeams()));
     }
 }
