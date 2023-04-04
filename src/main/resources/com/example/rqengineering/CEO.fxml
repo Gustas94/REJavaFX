@@ -5,6 +5,7 @@
 
 <AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.CEO">
    <children>
+      <Button layoutX="191.0" layoutY="599.0" mnemonicParsing="false" onAction="#viewInstallationTeams" text="View Installation Teams" />
       <HBox layoutX="1.0" layoutY="48.0" prefHeight="100.0" prefWidth="375.0">
          <children>
             <TableView fx:id="installationTeamTable" prefHeight="100.0" prefWidth="375.0">
@@ -58,5 +59,7 @@
       <Label layoutX="136.0" layoutY="160.0" text="All Outstanding Jobs" />
       <Label layoutX="130.0" layoutY="295.0" text="customer information" />
       <Label layoutX="129.0" layoutY="436.0" text="prices of the products" />
+      <Button layoutX="192.0" layoutY="564.0" mnemonicParsing="false" onAction="#viewOutstandingJobs" text="View Outstanding Jobs" />
+      <Button layoutX="35.0" layoutY="564.0" mnemonicParsing="false" onAction="#viewCustomers" text="View Customers" />
    </children>
 </AnchorPane>

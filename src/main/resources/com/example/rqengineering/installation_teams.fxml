@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.Installation_Teams">
+   <children>
+      <VBox prefHeight="667.0" prefWidth="375.0">
+         <children>
+            <TableView fx:id="installationTeamTable" prefHeight="667.0" prefWidth="375.0">
+              <columns>
+                <TableColumn fx:id="teamIdColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="teamNameColumn" prefWidth="75.0" text="Name" />
+                  <TableColumn fx:id="peopleColumn" prefWidth="75.0" text="People" />
+                  <TableColumn fx:id="activeJobColumn" prefWidth="149.0" text="Active Job" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
