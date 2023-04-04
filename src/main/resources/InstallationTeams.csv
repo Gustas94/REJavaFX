@@ -1,6 +1,11 @@
 teamId,teamName,amountOfPeople,activeJobId
-1,Team Alpha,3,1
-2,Team Bravo,4,2
-3,Team Charlie,5,0
-4,Team Delta,3,3
-5,Team Echo,4,0
+1,Team Alpha,6,1
+2,Team Bravo,5,0
+3,Team Charlie,7,0
+4,Team Delta,7,0
+5,Team Echo,0,0
+6,Team Foxtrot,13,0
+7,Team Golf,12,0
+8,Team Hotel,12,0
+9,Team India,12,0
+10,Team Juliet,12,10

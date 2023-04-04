@@ -62,4 +62,9 @@ public class JobClass {
 
         this.isActive = isActive;
     }
+
+    @Override
+    public String toString() {
+        return getJobId() + " - " + getJobName();
+    }
 }

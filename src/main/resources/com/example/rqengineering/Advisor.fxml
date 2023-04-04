@@ -5,8 +5,8 @@
 
 <AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.Advisor">
    <children>
-      <Button layoutX="106.0" layoutY="391.0" mnemonicParsing="false" onAction="#openCustomerForm" text="Fill In Customer Information" />
-      <Button layoutX="109.0" layoutY="342.0" mnemonicParsing="false" text="Check Power Consumption" />
+      <Button layoutX="107.0" layoutY="429.0" mnemonicParsing="false" onAction="#openCustomerForm" text="Fill In Customer Information" />
+      <Button fx:id="checkPowerConsumptionButton" layoutX="109.0" layoutY="342.0" mnemonicParsing="false" text="Check Power Consumption" />
       <HBox layoutY="91.0" prefHeight="100.0" prefWidth="375.0">
          <children>
             <TableView prefHeight="100.0" prefWidth="375.0">
@@ -17,5 +17,6 @@
             </TableView>
          </children>
       </HBox>
+      <Label fx:id="powerConsumptionLabel" layoutX="110.0" layoutY="373.0" prefHeight="45.0" prefWidth="159.0" wrapText="true" />
    </children>
 </AnchorPane>

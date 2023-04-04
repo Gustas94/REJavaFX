@@ -4,10 +4,10 @@ public class InstallationTeam {
     private int teamId;
     private String teamName;
 
-    private String amountOfPeople;
+    private int amountOfPeople;
     private JobClass activeJob;
 
-    public InstallationTeam(int teamId, String teamName, String amountOfPeople, JobClass activeJob) {
+    public InstallationTeam(int teamId, String teamName, int amountOfPeople, JobClass activeJob) {
         this.teamId = teamId;
         this.teamName = teamName;
         this.activeJob = activeJob;
@@ -30,11 +30,11 @@ public class InstallationTeam {
         this.teamName = teamName;
     }
 
-    public String getAmountOfPeople() {
+    public int getAmountOfPeople() {
         return amountOfPeople;
     }
 
-    public void setAmountOfPeople(String amountOfPeople) {
+    public void setAmountOfPeople(int amountOfPeople) {
         this.amountOfPeople = amountOfPeople;
     }
 
@@ -44,5 +44,11 @@ public class InstallationTeam {
 
     public void setActiveJob(JobClass activeJob) {
         this.activeJob = activeJob;
+    }
+
+
+    @Override
+    public String toString() {
+        return getTeamId() + " - " + getTeamName();
     }
 }

@@ -5,7 +5,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Application extends javafx.application.Application {
 
@@ -27,8 +29,10 @@ public class Application extends javafx.application.Application {
     public static void main(String[] args) {
         customers = CustomerLoader.readCustomersFromFile("src/main/resources/customers.csv");
         jobs = JobLoader.readJobsFromFile("src/main/resources/jobs.csv");
-        teams = InstallationTeamLoader.readTeamsFromFile("src/main/resources/InstallationTeams.csv", jobs);
         employees = InstallationEmployeesLoader.readEmployeesFromFile("src/main/resources/InstallationEmployees.csv");
+        Map<Integer, Integer> teamMemberCounts = InstallationTeamLoader.countEmployeesPerTeam("src/main/resources/InstallationEmployees.csv");
+        teams = InstallationTeamLoader.readTeamsFromFile("src/main/resources/InstallationTeams.csv", jobs, teamMemberCounts);
+        InstallationTeamLoader.updateInstallationTeamsFile("src/main/resources/InstallationTeams.csv", teamMemberCounts);
         launch(args);
     }
 
@@ -37,7 +41,7 @@ public class Application extends javafx.application.Application {
     }
 
     public static List<JobClass> getJobs() {
-        return jobs;
+        return new ArrayList<>(jobs);
     }
 
     public static List<InstallationTeam> getTeams() {
@@ -46,5 +50,9 @@ public class Application extends javafx.application.Application {
 
     public static List<InstallationEmployee> getEmployees() {
         return employees;
+    }
+
+    public static void updateJobs(List<JobClass> updatedJobs) {
+        jobs = updatedJobs;
     }
 }

@@ -17,7 +17,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\src\main\resources\Job.csv">
+        <entry key="\src\main\resources\UpdatedInstallationTeams.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -25,6 +25,13 @@
           </value>
         </entry>
         <entry key="\src\main\resources\customers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\resources\jobs.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -2,6 +2,7 @@ package com.example.rqengineering;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -31,5 +32,16 @@ public class JobLoader {
         }
 
         return jobs;
+    }
+
+    public static void saveJobsToFile(String filePath, List<JobClass> jobs) {
+        try (PrintWriter fileWriter = new PrintWriter(new File(filePath))) {
+            fileWriter.println("jobId,jobName,Description,Materials,isActive");
+            for (JobClass job : jobs) {
+                fileWriter.println(job.getJobId() + "," + job.getJobName() + "," + job.getDescription() + "," + job.getMaterials() + "," + job.isActive());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

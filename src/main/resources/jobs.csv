@@ -1,11 +1,11 @@
 jobId,jobName,Description,Materials,isActive
 1,Job A,Job A Description,Wood|Concrete|Steel,true
 2,Job B,Job B Description,Copper|PVC|Cement,false
-3,Job C,Job C Description,Aluminum|Glass|Insulation,true
+3,Job C,Job C Description,Aluminum|Glass|Insulation,false
 4,Job D,Job D Description,Drywall|Brick|Plaster,false
-5,Job E,Job E Description,Tile|Granite|Marble,true
+5,Job E,Job E Description,Tile|Granite|Marble,false
 6,Job F,Job F Description,Plastic|Rubber|Stone,false
-7,Job G,Job G Description,Asphalt|Wood|Metal,true
+7,Job G,Job G Description,Asphalt|Wood|Metal,false
 8,Job H,Job H Description,Plywood|MDF|Plywood,false
-9,Job I,Job I Description,Gypsum|Sand|Gravel,true
-10,Job J,Job J Description,Rebar|Nails|Screws,false
+9,Job I,Job I Description,Gypsum|Sand|Gravel,false
+10,Job J,Job J Description,Rebar|Nails|Screws,true
