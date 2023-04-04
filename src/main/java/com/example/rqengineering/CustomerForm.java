@@ -1,6 +1,7 @@
 package com.example.rqengineering;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.time.LocalDate;
 import java.util.List;
 
 public class CustomerForm {
@@ -37,6 +39,12 @@ public class CustomerForm {
     @FXML
     private Label messageLabel;
 
+    @FXML
+    private DatePicker startDatePicker;
+
+    @FXML
+    private DatePicker endDatePicker;
+
     public void saveCustomerInformation() throws IOException {
         String customerId = String.valueOf(Application.getCustomers().size() + 1);
         String firstName = firstNameField.getText();
@@ -46,6 +54,9 @@ public class CustomerForm {
         String address = addressField.getText();
         String emergencyPhone = emergencyPhoneField.getText();
         String activeJob = activeJobField.getText();
+        LocalDate startDate = startDatePicker.getValue();
+        LocalDate endDate = endDatePicker.getValue();
+        boolean isActive = endDate == null || endDate.isAfter(LocalDate.now());
 
         // Add validations for the input fields here
         if (isAnyFieldEmpty()) {

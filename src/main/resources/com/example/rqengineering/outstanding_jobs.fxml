@@ -3,17 +3,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.Outstanding_Jobs">
    <children>
       <VBox prefHeight="667.0" prefWidth="375.0">
          <children>
-            <TableView fx:id="outstandingJobsTable" prefHeight="670.0" prefWidth="375.0">
+            <TableView fx:id="outstandingJobsTable" prefHeight="657.0" prefWidth="375.0">
               <columns>
-                <TableColumn fx:id="jobIdColumn" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
-                  <TableColumn fx:id="isActiveColumn" prefWidth="75.0" text="Is Active" />
-                  <TableColumn fx:id="descriptionColumn" prefWidth="149.0" text="Description" />
+                <TableColumn fx:id="jobIdColumn" prefWidth="34.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="58.0" text="Name" />
+                  <TableColumn fx:id="isActiveColumn" prefWidth="52.0" text="Is Active" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="74.0" text="Description" />
+                  <TableColumn fx:id="customerNameColumn" prefWidth="81.0" text="Customer Name" />
+                  <TableColumn fx:id="startDateColumn" prefWidth="75.0" text="Start Date" />
+
+
               </columns>
             </TableView>
          </children>

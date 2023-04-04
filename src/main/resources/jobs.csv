@@ -1,6 +1,6 @@
 jobId,jobName,Description,Materials,isActive
 1,Job A,Job A Description,Wood|Concrete|Steel,true
-2,Job B,Job B Description,Copper|PVC|Cement,false
+2,Job B,Job B Description,Copper|PVC|Cement,true
 3,Job C,Job C Description,Aluminum|Glass|Insulation,false
 4,Job D,Job D Description,Drywall|Brick|Plaster,false
 5,Job E,Job E Description,Tile|Granite|Marble,false
