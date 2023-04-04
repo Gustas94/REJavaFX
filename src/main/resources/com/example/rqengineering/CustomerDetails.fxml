@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rqengineering.CustomerDetails">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutX="146.0" prefHeight="667.0" prefWidth="229.0" spacing="10">
+         <children>
+            <Label fx:id="customerIdLabel" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="firstNameLabel" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="lastNameLabel" layoutX="184.0" layoutY="344.0" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="emailLabel" layoutX="184.0" layoutY="352.0" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="phoneNumberLabel" layoutX="184.0" layoutY="361.0" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="addressLabel" layoutX="184.0" layoutY="369.0" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="emergencyPhoneLabel" layoutX="184.0" layoutY="378.0" prefHeight="17.0" prefWidth="224.0" />
+            <Label fx:id="customerActiveJobLabel" layoutX="184.0" layoutY="386.0" prefHeight="17.0" prefWidth="224.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" prefHeight="667.0" prefWidth="142.0" spacing="10">
+         <children>
+            <Label text="ID:" />
+            <Label layoutX="139.0" layoutY="335.0" text="First Name:" />
+            <Label layoutX="139.0" layoutY="344.0" text="Last Name:" />
+            <Label layoutX="139.0" layoutY="352.0" text="Email:" />
+            <Label layoutX="139.0" layoutY="361.0" text="Phone Number:" />
+            <Label layoutX="139.0" layoutY="369.0" text="Address:" />
+            <Label layoutX="139.0" layoutY="378.0" text="Emergency Phone:" />
+            <Label layoutX="139.0" layoutY="416.0" text="Active Job Id:" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

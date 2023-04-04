@@ -19,7 +19,7 @@ public class Customer {
     private String activeJob;
 
 
-    public Customer(int CustomerId, String firstName, String lastName, String email, String phoneNumber, String address, String emergencyPhone, String activeJob) {
+    public Customer(int customerId, String firstName, String lastName, String email, String phoneNumber, String address, String emergencyPhone, String activeJob) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -93,5 +93,7 @@ public class Customer {
     public void setActiveJob(String activeJob) {
         this.activeJob = activeJob;
     }
+
+
 
 }
